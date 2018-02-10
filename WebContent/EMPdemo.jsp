@@ -43,6 +43,16 @@ Tax Data:<br/>
 
 <h2>An expression language - if statement</h2>
 10 is an ${10 mod 2 == 0 ? "even" : "odd"} number.
-<h2></h2>
+
+<hr/>
+<h2>Using implicit JSP objects</h2>
+<h3>Check to see if hours worked is empty:</h3>
+ ${empty param.hoursWorked }
+<h3>Check combined with EL - if stmts:</h3> 
+ ${empty param.hoursWorked ? "Please enter hours worked" : "Thanks for entering hours worked" }
+<h3>Using param and math operations:</h3>
+Employee compensation: ${employee.hourlyRate * param.hoursWorked }
+<h3>Using header to get host information:</h3>
+${header.host}
 </body>
 </html>
