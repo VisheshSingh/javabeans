@@ -14,5 +14,27 @@
 Employee ID: ${employee.employeeID }<br/>
 Employee Name: ${sessionScope.employee.firstName } ${sessionScope.employee.lastName }<br/>
 Hourly Rate: ${employee["hourlyRate"] }<br/>
+
+<hr/>
+<h2>Using the Map</h2>
+Tax Data:<br/>
+	<table border="2">
+		<tr>
+			<td>Georgia:</td>
+			<td>${taxes.Georgia}</td>
+		</tr>
+		
+		<tr>
+			<td>Florida:</td>
+			<td>${taxes.Florida}</td>
+		</tr>
+		
+		<tr>
+			<td>Texas:</td>
+			<td>${taxes.Texas}</td>
+		</tr>
+		
+		
+	</table>
 </body>
 </html>
