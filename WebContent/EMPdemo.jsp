@@ -33,8 +33,16 @@ Tax Data:<br/>
 			<td>Texas:</td>
 			<td>${taxes.Texas}</td>
 		</tr>
-		
-		
 	</table>
+
+<hr/>
+<h2>Calculations:</h2>
+<p>
+10C = ${(9.0/5.0)*10 + 32.0} F
+</p>
+
+<h2>An expression language - if statement</h2>
+10 is an ${10 mod 2 == 0 ? "even" : "odd"} number.
+<h2></h2>
 </body>
 </html>
